@@ -1,16 +1,27 @@
-<%= form_for :post, url:'/login/check' do |f| %>
-  <p>
-    <%= f.label :username %><br>
-    <%= f.text_field :username %>
-  </p>
+<div class="col-md-4"></div>
+<div class="col-md-4">
+  <%= form_for :post, url:'/login/check' do |f| %>
+    <p>
+      <%= f.label :username %><br>
+      <%= f.text_field :username %>
+    </p>
 
+<<<<<<< HEAD
   <p>
     <%= f.label :password %><br>
     <%= f.password_field :password %>
   </p>
+=======
+    <p>
+      <%= f.label :password %><br>
+      <%= f.password_field :password %>
+    </p
+>>>>>>> origin/master
 
-  <p>
-    <%= f.submit %>
-  </p>
-<% end %>
-<a href="/signup/index">SignUp</a>
+    <p>
+      <%= f.submit "Log In" %>
+    </p>
+  <% end %>
+<p>New User?  <a href="/signup/index">SignUp</a></p>
+</div>
+<div class="col-md-4"></div>
